@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@keyframes Scaling {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+main, header, footer {
+    width: calc(95vw - 10px);
+    margin: 0 auto;
+    border: 3px solid #ffffff;
+    margin-bottom: 3vh;
+    padding: 1vw;
+    background-color: rgba(143, 0, 187, 0.3);
+    color: #ffffff;
+}
+
+a {
+    text-decoration:none; 
+    color: rgb(83, 83, 247);
+}
+
+.card {
+    animation: Scaling 2s;
+    width: calc(90vw - 10px);
+    border: 3px solid #ffffff;
+    margin-bottom: 1vh;
+    padding: 1vw;
+    background-color: rgb(45, 0, 97);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    text-align: center;
+    font-size: large;
+}
+
+.just_an_h1_class {
+    padding-left: 1vw;
+}
+
+.h2_class {
+    padding-left: 1vw;
+}
+
+body {
+    background-image: 
+    url(img/yyyyy.png);
+    margin: 0;
+    background-position: center;
+    font-family: "Press Start 2P";
+}
+
+p {
+    font-size: 1rem;
+    color: rgb(255, 79, 93);
+}
+
+.fooooter {
+    font-size: 1rem;
+    color: rgb(160, 0, 80)
+}
+
+@media (min-width:1024px) {
+    .container {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+    .card {
+        margin: 0 1vw;
+    }
+    main, header, footer {
+        width: 1024px;
+    }
+}
